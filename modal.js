@@ -1,17 +1,19 @@
 $(function(){
 
-// モーダルウィンドウが開くときの処理	
-$(".modalopen").click(function(){
-        $(".modal").fadeIn();
-	$(this).addClass("open");
-	return false;
-});
+  var $modal = $(".modal");
+  var $modalOpen = $(".modalopen");
+  var $modalClose = $(".modalclose");
 
-// モーダルウィンドウが閉じるときの処理	
-$(".modalclose").click(function(){
-	$(this).parents(".modal").fadeOut();
-	$(".modalopen").removeClass("open");
-	return false;
-});  
-    
+  // モーダルウィンドウが開くときの処理
+  $modalOpen.click(function(){
+    $modal.fadeIn();
+    return false;
+  });
+
+  // モーダルウィンドウが閉じるときの処理
+  $modalClose.click(function(){
+    $modal.fadeOut();
+    return false;
+  });
+
 });
