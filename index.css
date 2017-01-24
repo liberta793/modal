@@ -27,6 +27,9 @@ body {
 /* モーダルウィンドウの中身のスタイル */
 .modal .inner {
   position:absolute;
+  width: 50%;
+  height: 30vh;
+  background: #ffffff;
   z-index:11;
   top:50%;
   left:50%;
