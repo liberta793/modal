@@ -1,17 +1,19 @@
 $(function(){
 
 // モーダルウィンドウが開くときの処理	
-$(".modalopen").click(function(){
-        $(".modal").fadeIn();
+$(".modal_1").click(function(){
+	$("#modal01").fadeIn();
+	$(".overlay").fadeIn();
 	$(this).addClass("open");
 	return false;
 });
 
 // モーダルウィンドウが閉じるときの処理	
 $(".modalclose").click(function(){
-	$(this).parents(".modal").fadeOut();
-	$(".modalopen").removeClass("open");
+	$("#modal01").fadeOut();
+	$(".overlay").fadeOut();
 	return false;
 });  
-    
+
+
 });
